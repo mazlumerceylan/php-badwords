@@ -11,6 +11,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
    // Stampa il paragrafo e la sua lunghezza.
   echo "Paragrafo: " . $paragrafo . "<br>";
   echo "Lunghezza: " . strlen($paragrafo) . "<br>";
+
+  $paragrafo_censurato = str_replace($badword, '***', $paragrafo);
+
+   // Stampa il paragrafo censurato e la sua lunghezza.
+   echo "Paragrafo censurato: " . $paragrafo_censurato . "<br>";
+   echo "Lunghezza: " . strlen($paragrafo_censurato);
+
     
 }
 
