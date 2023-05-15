@@ -7,6 +7,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $paragrafo = $_POST["paragrafo"];
   $badword = $_POST["badword"];
 
+
+   // Stampa il paragrafo e la sua lunghezza.
+  echo "Paragrafo: " . $paragrafo . "<br>";
+  echo "Lunghezza: " . strlen($paragrafo) . "<br>";
+    
 }
 
 ?>
